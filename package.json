@@ -1,0 +1,29 @@
+{
+    "name": "cflib",
+    "version": "0.0.1",
+    "type": "module",
+    "main": "dist/cflib.js",
+    "author": "Jan C. Gerhard <jang@hybridsoftware.com>",
+    "license": "MIT",
+    "description": "",
+    "keywords": [],
+    "scripts": {
+        "build": "rollup -c",
+        "build:watch": "rollup -c -w",
+        "lint": "eslint . --ext .js",
+        "lint:fix": "eslint . --ext .js --fix",
+        "format": "prettier --write \"src/**/*.js\"",
+        "test": "jest",
+        "test:watch": "jest --watch",
+        "test:coverage": "jest --coverage"
+    },
+    "devDependencies": {
+        "@rollup/plugin-terser": "^0.4.4",
+        "eslint": "^9.25.1",
+        "eslint-config-prettier": "^10.1.2",
+        "eslint-plugin-jest": "^28.11.0",
+        "eslint-plugin-prettier": "^5.2.6",
+        "prettier": "^3.5.3",
+        "rollup": "^4.40.1"
+    }
+}
