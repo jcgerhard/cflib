@@ -1,10 +1,7 @@
-export function get(username) {
-    const user = api.users.get_by_user_name(username);
-    return {
-        fullname: user.fullname,
-        firstname: user.fullname,
-        lastname: user.fullname,
-        email: user.email,
-        attributes: user.attributes_names,
-    };
+/**
+ * Returns a greeting string from the system.
+ * @returns {string} A greeting message.
+ */
+export function greetFromUser() {
+    return 'Hello from the user!';
 }
