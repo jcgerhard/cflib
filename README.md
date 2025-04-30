@@ -1,5 +1,6 @@
 <div align="center">
   <img alt="Icon image" src="./images/cflib.svg" height="128">
-  <h1>cflib</h1>
-  <p>A tiny inconspicuous Javascript library for Cloudflow</p>
+  <h3 style="margin: 20px">A tiny inconspicuous Javascript library for Cloudflow</h3>
 </div>
+
+# cflib
