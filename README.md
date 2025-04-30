@@ -1,5 +1,5 @@
-<div align="center">
-    <p style="font-size: 50px; margin-bottom: -15px"><span style="color: #2273B9">cf</span><strong>lib</strong></p>
-    <p style="font-size: 20px; font-weight: 200">A small Javascript library for Cloudflow</p>
-<hr/>
-</div>
+<p align="center">
+  <img src="" height="128">
+  <h1 align="center">cflib</h1>
+  <h3 align="center">A tiny inconspicuous Javascript library for Cloudflow</h3>
+</p>
