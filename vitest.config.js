@@ -6,8 +6,9 @@ export default defineConfig({
         coverage: {
             provider: 'v8',
             directory: 'coverage',
-            exclude: ['node_modules/**', 'dist/**'],
+            exclude: ['node_modules/**', 'dist/**', 'tests/**', '*.config.js', '.eslintrc.js'],
+            include: ['src/**/*'],
         },
-        include: ['**/*.{test,spec}.js'],
+        include: ['tests/**/*.test.js'],
     },
 });
