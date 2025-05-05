@@ -69,7 +69,7 @@ This object schema defines the separation object received from a PDF PACKZ expor
   },
   "L": {
     "type": "number",
-    "description": "The L* component of the color (Lab). Is also used to mark the darkest color with a value of -100"
+    "description": "The L* component of the color (Lab). Also used to mark the darkest color with -100"
   },
   "a": {
     "type": "number",
