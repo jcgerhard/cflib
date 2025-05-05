@@ -1,4 +1,4 @@
-import * as sep from './separation/separation.js';
+import * as sep from './separations/separations.js';
 import * as env from './environment/environment.js';
 import * as meta from './metadata/metadata.js';
 import * as rip from './rip/rip.js';

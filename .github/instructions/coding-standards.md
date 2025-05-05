@@ -1,9 +1,19 @@
 # Coding Standards
 
-## Script naming conventions
+## Naming conventions
 
-- Use snake_case for variables, functions, and methods
-- Use snake_case with ALL_CAPS for constants
+- Use camelCase for variables, functions, and methods
+- Use ⁠UPPERCASE_WITH_UNDERSCORES for global/immutable constants
+- Use ⁠camelCase for local constants
+
+## Function conventions
+
+- Required parameters should be defined first
+- Optional parameters should be defined last
+- Optional parameters should be defined as an "options" object
+- Using deconstruction for the "options" object is preferred
+- Apply meaningfull names to parameters
+- Use default values for optional parameters
 
 ## Coding restrictions
 
