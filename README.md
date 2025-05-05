@@ -1,8 +1,6 @@
-# cflib
-
 <p align="center">
   <img alt="Icon image" src="./images/cflib.svg" height="128">
-  <h3 align="center">A tiny inconspicuous Javascript library for Cloudflow</h3>
+  <h3 align="center">A tiny inconspicuous javascript library for Cloudflow</h3>
 </p>
 
 <p align="center">
@@ -23,6 +21,8 @@
   </a>
 </p>
 
+# cflib
+
 ## Overview
 
 A JavaScript library designed to work with Cloudflow, providing utilities for handling separations, metadata, and more.
@@ -39,14 +39,6 @@ A JavaScript library designed to work with Cloudflow, providing utilities for ha
 ## Documentation
 
 Visit the official [documentation](docs/index.md) here.
-
-## Contributing
-
-1. Fork the repository
-2. Create your feature branch (`git checkout -b feature/amazing-feature`)
-3. Commit your changes (`git commit -m 'Add some amazing feature'`)
-4. Push to the branch (`git push origin feature/amazing-feature`)
-5. Open a Pull Request
 
 ## License
 
