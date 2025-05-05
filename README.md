@@ -38,7 +38,7 @@ A JavaScript library designed to work with Cloudflow, providing utilities for ha
 
 ## Documentation
 
-Visit the official [documentation](docs/index.md) here.
+Visit the official [documentation](https://jangerhard.gitbook.io/cflib/) on GitBook.
 
 ## License
 
