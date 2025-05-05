@@ -4,21 +4,11 @@
 </p>
 
 <p align="center">
-  <a href="https://github.com/jcgerhard/cflib/blob/main/LICENSE">
-    <img src="https://img.shields.io/badge/license-MIT-darkgreen.svg" alt="License">
-  </a>
-  <a href="#">
-    <img src="https://img.shields.io/codecov/c/github/jcgerhard/cflib" alt="Coverage">
-  </a>
-  <a href="https://github.com/jcgerhard/cflib/commits/main">
-    <img src="https://img.shields.io/github/last-commit/jcgerhard/cflib" alt="Last Commit">
-  </a>
-  <a href="#">
-    <img src="https://img.shields.io/badge/Ready%20for-Cloudflow%2025.03-blue" alt="Made for Cloudflow 25.03">
-  </a>
-  <a href="#">
-    <img src="https://img.shields.io/github/v/release/jcgerhard/cflib " alt="Release">
-  </a>
+  <img src="https://img.shields.io/badge/license-MIT-darkgreen.svg" alt="License">
+  <img src="https://img.shields.io/codecov/c/github/jcgerhard/cflib" alt="Coverage">
+  <img src="https://img.shields.io/github/last-commit/jcgerhard/cflib" alt="Last Commit">
+  <img src="https://img.shields.io/badge/Ready%20for-Cloudflow%2025.03-blue" alt="Made for Cloudflow 25.03">
+  <img src="https://img.shields.io/github/v/release/jcgerhard/cflib" alt="Release">
 </p>
 
 # cflib
