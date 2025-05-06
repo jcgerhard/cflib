@@ -1,0 +1,15 @@
+# Export ignore everything by default
+* export-ignore
+
+# Include only the cflib.js file in the dist folder in archives (like GitHub releases)
+!dist/cflib.js
+
+# Standard Git attributes for text files (line ending normalization)
+*.md text eol=lf
+*.json text eol=lf
+*.js text eol=lf
+*.css text eol=lf
+*.html text eol=lf
+*.svg text eol=lf
+.gitignore text eol=lf
+.gitattributes text eol=lf
