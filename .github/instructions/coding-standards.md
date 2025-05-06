@@ -16,6 +16,16 @@ is not appropriate for the project, feel free to change it. But always document 
 - Use ⁠UPPERCASE_WITH_UNDERSCORES for global/immutable constants
 - Use ⁠camelCase for local constants
 
+## Comments conventions
+
+- Use single-line comments (//) for short comments
+- Use multi-line comments (/* */) for longer comments
+- Use JSDoc comments for documenting functions and methods
+- Use JSDoc comments for documenting classes and modules
+- Use JSDoc comments for documenting parameters and return values
+- Use JSDoc comments for documenting events and callbacks
+- Use JSDoc comments for documenting exceptions and errors
+
 ## Function conventions
 
 - Required parameters should be defined first

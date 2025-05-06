@@ -8,9 +8,8 @@ export default defineConfig({
         search: {
             provider: 'local',
         },
-        // https://vitepress.dev/reference/default-theme-config
         nav: [{ text: 'Home', link: '/introduction' }],
-
+        socialLinks: [{ icon: 'github', link: 'https://github.com/jcgerhard/cflib' }],
         sidebar: [
             { text: 'Introduction', link: '/introduction' },
             { text: 'Installation', link: '/installation' },
@@ -29,10 +28,9 @@ export default defineConfig({
                 ],
             },
         ],
-        socialLinks: [{ icon: 'github', link: 'https://github.com/jcgerhard/cflib' }],
-        footer: {
-            message: 'Released under the MIT License.',
-            copyright: 'Copyright © 2025-present Jan C. Gerhard',
+        outline: {
+            label: 'Page Content',
+            level: [2, 3],
         },
         lastUpdated: {
             text: 'Updated at',
@@ -46,6 +44,10 @@ export default defineConfig({
                 timeZone: 'Europe/Berlin', // Use appropriate time zone
                 timeZoneName: 'short', // Adds time zone abbreviation
             },
+        },
+        footer: {
+            message: 'Released under the MIT License.',
+            copyright: 'Copyright © 2025-present Jan C. Gerhard',
         },
     },
 });

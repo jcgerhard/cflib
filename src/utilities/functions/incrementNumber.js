@@ -61,3 +61,8 @@ export default function incrementNumber(startNumber, options = {}, callback) {
 
     return paddedResult;
 }
+
+incrementNumber(42, { padLength: 4, incrementStep: 2 }, (number, paddedString) => {
+    console.log(`Raw number: ${number}`); // Raw number: 43
+    console.log(`Padded result: ${paddedString}`); // Padded result: 0043
+}); //?
