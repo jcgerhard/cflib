@@ -1,5 +1,15 @@
 # Coding Standards
 
+Use this document to define the coding standards for the project. The goal is to ensure that all code is consistent,
+readable, and maintainable. But also always remember that the code should be simple and easy to understand.
+
+Nevertheless, the following coding standards are not set in stone. They are just a guideline to help you write better code.
+Always check for best practices and the latest standards in the JavaScript community. If you find a better way to do something,
+feel free to change it.
+
+Always act as a professional senior-level developer and use your best judgment. If you think that a certain coding standard
+is not appropriate for the project, feel free to change it. But always document your changes and explain why you made them.
+
 ## Naming conventions
 
 - Use camelCase for variables, functions, and methods
@@ -11,6 +21,7 @@
 - Required parameters should be defined first
 - Optional parameters should be defined last
 - Optional parameters should be defined as an "options" object
+- Optional callbacks should be defined as a last parameter
 - Using deconstruction for the "options" object is preferred
 - Apply meaningfull names to parameters
 - Use default values for optional parameters
