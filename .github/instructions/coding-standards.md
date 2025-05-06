@@ -18,8 +18,8 @@ is not appropriate for the project, feel free to change it. But always document 
 
 ## Comments conventions
 
-- Use single-line comments (//) for short comments
-- Use multi-line comments (/* */) for longer comments
+- Use single-line comments (/ /) for short comments
+- Use multi-line comments (/**/) for longer comments
 - Use JSDoc comments for documenting functions and methods
 - Use JSDoc comments for documenting classes and modules
 - Use JSDoc comments for documenting parameters and return values

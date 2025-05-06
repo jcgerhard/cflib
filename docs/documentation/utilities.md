@@ -6,7 +6,8 @@ next: false
 
 ## incrementNumber
 
-Increments a given positive number by a specified step and returns the result as a string, padded to a specified length with a given character.
+Increments a given positive number by a specified step and returns the result as a string, padded to a specified length
+with a given character.
 
 ### Function Signature
 
@@ -85,8 +86,3 @@ cflib.utils.incrementNumber(counterElement.dataset.count, {}, () => {
   notifyUserOfIncrement();
 });
 ```
-
-::: tip Last Updated
-2025-05-06
-:::
-
