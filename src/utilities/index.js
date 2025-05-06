@@ -1,3 +1,3 @@
-import incrementNumber from './incrementNumber.js';
+import incrementNumber from './functions/incrementNumber.js';
 
 export { incrementNumber };
