@@ -29,7 +29,7 @@
  *   console.log(`Padded result: ${paddedString}`); // Padded result: *******51
  * });
  */
-export function incrementNumber(startNumber, options = {}, callback) {
+export default function incrementNumber(startNumber, options = {}, callback) {
     // Validate required startNumber parameter
     if (startNumber === undefined) {
         throw new Error('The startNumber is required. Please provide a number to start incrementing from.');
