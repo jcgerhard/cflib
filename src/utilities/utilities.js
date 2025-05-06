@@ -12,31 +12,6 @@
  * @throws {Error} Throws an error if the `startNumber` parameter is not provided (is undefined).
  * @throws {Error} Throws an error if the `startNumber` parameter is negative.
  *
- * @example
- * // Basic usage
- * const nextId = getNextIncrement(123);
- * console.log(nextId); // Output: "00000124"
- *
- * @example
- * // Custom options with hashtag padding
- * const nextCode = getNextIncrement(99, { padLength: 5, incrementStep: 2, padCharacter: '#' });
- * console.log(nextCode); // Output: "##101"
- *
- * @example
- * // Handling potential errors (missing startNumber)
- * try {
- *   getNextIncrement();
- * } catch (error) {
- *   console.error(error.message); // Output: "The startNumber is required. Please provide a number to start incrementing from."
- * }
- *
- * @example
- * // Handling potential errors (negative startNumber)
- * try {
- *   getNextIncrement(-5);
- * } catch (error) {
- *   console.error(error.message); // Output: "The startNumber must be a positive number."
- * }
  */
 export function getNextIncrement(startNumber, options = {}) {
     if (startNumber === undefined) {
