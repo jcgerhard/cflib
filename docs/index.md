@@ -4,22 +4,39 @@ layout: home
 
 hero:
   name: "cflib"
-  text: "A tiny inconspicuous javascript library for Cloudflow"
-  tagline: My great project tagline
+  text: ""
+  tagline: "A tiny inconspicuous javascript library for Cloudflow"
   actions:
     - theme: brand
-      text: Markdown Examples
-      link: /markdown-examples
+      text: Documentation
+      link: /introduction
     - theme: alt
-      text: API Examples
-      link: /api-examples
+      text: Github
+      link: https://github.com/jcgerhard/cflib
 
 features:
-  - title: Feature A
+  - title: Colors
+    icon: 🎨
     details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
-  - title: Feature B
+  - title: Environment
+    icon: ♻️
     details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
-  - title: Feature C
+  - title: Metadata
+    icon: 🔍
+    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
+  - title: RIP
+    icon: ⚰️
+    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
+  - title: System
+    icon: ⚙️
+    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
+  - title: User
+    icon: 👤
+    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
+  - title: Utilities
+    icon: 🛠️
+    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
+  - title: Jobs
+    icon: 💼
     details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
 ---
-
