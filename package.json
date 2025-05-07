@@ -26,7 +26,7 @@
         "test:coverage": "vitest run --coverage",
         "docs:dev": "vitepress dev vitepress",
         "docs:build": "vitepress build vitepress && touch docs/.nojekyll",
-        "docs:preview": "vitepress preview docs --base=/"
+        "docs:preview": "vitepress preview docs"
     },
     "devDependencies": {
         "@rollup/plugin-terser": "^0.4.4",

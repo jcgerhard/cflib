@@ -15,25 +15,35 @@
 
 ## Overview
 
-A JavaScript library designed to work with Cloudflow, providing utilities for handling separations, metadata, and more.
+CFLib is a lightweight JavaScript library exclusively tailored for Hybrid Cloudflow environments that:
 
-## Installation
+- Provides comprehensive utilities for managing separations, metadata, and advanced Cloudflow operations
+- Extends the standard Cloudflow API with useful abstractions and convenience functions
+- Maintains a minimal footprint to integrate seamlessly with your existing code
+- Features a modular architecture that supports customization and extension
+- Remains consistently compatible with the latest Cloudflow releases through regular maintenance
+- Simplifies complex scripting while maintaining full access to underlying platform capabilities
 
-- Get the latest release directly from this repo's [releases page](https://github.com/jcgerhard/cflib/releases).
+## Getting Started
 
-## Quick Start
+### Installation
 
-- Place the `cflib.js`  file in a folder of your choice (`PP_FILE_STORE` is recommended).
-- Add the file's Cloudflow URL to your script nodes using the `Include Scripts` parameter.
+Get the latest release from the [GitHub releases page](https://github.com/jcgerhard/cflib/releases).
 
-## Documentation
+### Documentation
 
-Visit the official [documentation](https://jangerhard.gitbook.io/cflib/) on GitBook.
+Comprehensive documentation is available at [cflib documentation](https://jcgerhard.github.io/cflib/), including:
+
+- Detailed installation instructions
+- API reference
+- Usage examples
+
+For quick integration, refer to the [installation guide](https://jcgerhard.github.io/cflib/installation.html).
 
 ## License
 
-This project is licensed under the MIT License - see the LICENSE file for details.
+This project is licensed under the MIT License - see the [LICENSE](./LICENSE) file for details.
 
 ## Support
 
-For support or questions, please open an issue in the repository.
+For support or questions, please [open an issue](https://github.com/jcgerhard/cflib/issues) in the repository.
