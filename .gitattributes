@@ -1,9 +1,8 @@
-# Define what should be excluded from archives (like GitHub releases)
+# Set default behavior
 * export-ignore
 
-# Define specific files to be included in archives
-!dist/ export-ignore
-!dist/cflib.js -export-ignore
+# Explicitly include dist/cflib.js in archives
+!dist/cflib.js
 
 # Standard Git attributes for text files (line ending normalization)
 *.md text eol=lf

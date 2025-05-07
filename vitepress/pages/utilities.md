@@ -50,8 +50,6 @@ incrementNumber(startNumber, options = {}, callback)
 #### Basic Usage
 
 ```javascript
-import cflib from 'cflib';
-
 // Basic usage - increment by 1 with default padding
 const result = cflib.utils.incrementNumber(42);
 console.log(result); // "00000043"
