@@ -7,9 +7,5 @@ node_modules
 # Test coverage
 coverage
 
-# Build outputs
-/dist
-!docs/
-
 # Cache files
 vitepress/.vitepress/cache
