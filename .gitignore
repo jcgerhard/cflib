@@ -9,7 +9,7 @@ coverage
 
 # Build outputs
 /dist
-!docs/.vitepress/dist
+!docs/
 
 # Cache files
-docs/.vitepress/cache
+vitepress/.vitepress/cache
