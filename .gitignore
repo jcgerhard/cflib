@@ -1,5 +1,15 @@
+# System files
 .DS_store
+
+# Dependencies
 node_modules
-./dist
+
+# Test coverage
 coverage
+
+# Build outputs
+/dist
+!docs/.vitepress/dist
+
+# Cache files
 docs/.vitepress/cache
