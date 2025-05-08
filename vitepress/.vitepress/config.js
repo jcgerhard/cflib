@@ -14,6 +14,9 @@ export default defineConfig({
     outDir: resolve(__dirname, '../../docs'),
     // Add srcDir to explicitly tell VitePress where content is located
     srcDir: resolve(__dirname, '..'),
+    markdown: {
+        lineNumbers: true,
+    },
     themeConfig: {
         search: {
             provider: 'local',
