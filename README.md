@@ -8,7 +8,7 @@
     <img src="https://img.shields.io/codecov/c/github/jcgerhard/cflib" alt="Coverage">
     <img src="https://img.shields.io/github/last-commit/jcgerhard/cflib" alt="Last Commit">
     <img src="https://img.shields.io/badge/Ready%20for-Cloudflow%2025.03-blue" alt="Made for Cloudflow 25.03">
-    <img src="https://img.shields.io/github/v/release/jcgerhard/cflib?include_prereleases" alt="Release">
+    <img src="https://img.shields.io/github/v/release/jcgerhard/cflib" alt="Release">
 </p>
 
 # cflib
