@@ -19,12 +19,12 @@ rollup.config.js export-ignore
 vitest.config.js export-ignore
 
 # Explicitly exclude all top-level folders
-dev/* export-ignore
-docs/* export-ignore
-images/* export-ignore
-src/* export-ignore
-tests/* export-ignore
-vitepress/* export-ignore
+dev export-ignore
+docs export-ignore
+images export-ignore
+src export-ignore
+tests export-ignore
+vitepress export-ignore
 
 # Text file normalization
 *.md text eol=lf
