@@ -19,11 +19,9 @@ rollup.config.js export-ignore
 vitest.config.js export-ignore
 
 # Explicitly exclude all top-level folders
-coverage/* export-ignore
 dev/* export-ignore
 docs/* export-ignore
 images/* export-ignore
-node_modules/* export-ignore
 src/* export-ignore
 tests/* export-ignore
 vitepress/* export-ignore
