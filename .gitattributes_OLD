@@ -1,0 +1,39 @@
+# Archive settings
+
+# Explicitly exclude all top-level files
+.DS_Store export-ignore
+.eslintrc.js export-ignore
+.git/ export-ignore
+.gitattributes export-ignore
+.github/ export-ignore
+.gitignore export-ignore
+.markdownlint.json export-ignore
+.prettierrc.json export-ignore
+.vscode/ export-ignore
+CHANGELOG.md export-ignore
+LICENSE export-ignore
+README.md export-ignore
+package-lock.json export-ignore
+package.json export-ignore
+rollup.config.js export-ignore
+vitest.config.js export-ignore
+
+# Explicitly exclude all top-level folders
+coverage/* export-ignore
+dev/* export-ignore
+docs/* export-ignore
+images/* export-ignore
+node_modules/* export-ignore
+src/* export-ignore
+tests/* export-ignore
+vitepress/* export-ignore
+
+# Text file normalization
+*.md text eol=lf
+*.json text eol=lf
+*.js text eol=lf
+*.css text eol=lf
+*.html text eol=lf
+*.svg text eol=lf
+.gitignore text eol=lf
+.gitattributes text eol=lf
