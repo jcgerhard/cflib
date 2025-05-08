@@ -10,13 +10,13 @@
 .markdownlint.json export-ignore
 .prettierrc.json export-ignore
 .vscode/ export-ignore
-CHANGELOG.md export-ignore
-LICENSE export-ignore
-README.md export-ignore
 package-lock.json export-ignore
 package.json export-ignore
 rollup.config.js export-ignore
 vitest.config.js export-ignore
+# CHANGELOG.md export-ignore
+# LICENSE export-ignore
+# README.md export-ignore
 
 # Explicitly exclude all top-level folders
 dev export-ignore
