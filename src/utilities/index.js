@@ -1,3 +1,3 @@
-import incrementNumber from './functions/incrementNumber.js';
+import incrementNumber from './functions/incrementAndFormat.js';
 
 export { incrementNumber };

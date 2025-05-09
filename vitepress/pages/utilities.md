@@ -4,15 +4,14 @@ next: false
 ---
 # Utilities
 
-## incrementNumber
+## incrementAndFormat
 
-Increments a given positive number by a specified step and returns the result as a string, padded to a specified length
-with a given character.
+Increments a given positive number by a specified step and returns the result as a fixed-width string with leading characters.
 
 ### Function Signature
 
 ```javascript
-incrementNumber(startNumber, options = {}, callback)
+incrementAndFormat(startNumber, options = {}, callback)
 ```
 
 ### Parameters
@@ -22,22 +21,22 @@ incrementNumber(startNumber, options = {}, callback)
   - Must be a non-negative number
 
 - `options` (object, optional)
-  - `padLength` (number, default: 8)
+  - `length` (number, default: 8)
     - The desired total length of the output string
     - The result will be padded to this length
-  - `incrementStep` (number, default: 1)
+  - `step` (number, default: 1)
     - The value to add to the `startNumber`
-  - `padCharacter` (string, default: '0')
+  - `character` (string, default: '0')
     - The character used for padding the beginning of the string
 
 - `callback` (function, optional)
   - Called with two parameters after incrementing the number:
-    - `incrementedNumber` - The raw number after incrementing (before padding)
-    - `paddedResult` - The formatted string with padding applied
+    - `incrementedNumber` - The raw number after incrementing
+    - `formattedResult` - The formatted string with padding applied
 
 ### Return Value
 
-- Returns a string representing the incremented number, padded according to the specified options
+- Returns a string representing the incremented number, formatted according to the specified options
 
 ### Exceptions
 
@@ -50,20 +49,20 @@ incrementNumber(startNumber, options = {}, callback)
 #### Basic Usage
 
 ```javascript
-// Basic usage - increment by 1 with default padding
-const result = cflib.utils.incrementNumber(42);
+// Basic usage - increment by 1 with default formatting
+const result = cflib.utils.incrementAndFormat(42);
 console.log(result); // "00000043"
 
-// Customize padding length and character
-const customPadded = cflib.utils.incrementNumber(99, { 
-  padLength: 5, 
-  padCharacter: '*' 
+// Customize output length and padding character
+const customFormatted = cflib.utils.incrementAndFormat(99, { 
+  length: 5, 
+  character: '*' 
 });
-console.log(customPadded); // "**100"
+console.log(customFormatted); // "**100"
 
 // Specify a different increment step
-const biggerStep = cflib.utils.incrementNumber(50, { 
-  incrementStep: 10 
+const biggerStep = cflib.utils.incrementAndFormat(50, { 
+  step: 10 
 });
 console.log(biggerStep); // "00000060"
 ```
@@ -71,15 +70,15 @@ console.log(biggerStep); // "00000060"
 #### Using the Callback
 
 ```javascript
-// Using callback to access both raw number and padded result
-cflib.utils.incrementNumber(42, { padLength: 5 }, (number, paddedString) => {
-  console.log(`Raw incremented number: ${number}`);      // Raw incremented number: 43
-  console.log(`Formatted padded string: ${paddedString}`); // Formatted padded string: 00043
+// Using callback to access both raw number and formatted result
+cflib.utils.incrementAndFormat(42, { length: 5 }, (number, formattedResult) => {
+  console.log(`Incremented number: ${number}`);       // Incremented number: 43
+  console.log(`Formatted result: ${formattedResult}`); // Formatted result: 00043
 });
 
 // Using callback for side effects without using the parameters
 const counterElement = document.getElementById('counter');
-cflib.utils.incrementNumber(counterElement.dataset.count, {}, () => {
+cflib.utils.incrementAndFormat(counterElement.dataset.count, {}, () => {
   // Perform actions after incrementing
   notifyUserOfIncrement();
 });

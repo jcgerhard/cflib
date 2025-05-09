@@ -43,7 +43,7 @@ export default defineConfig({
         ],
         outline: {
             label: 'Content',
-            level: [2, 3],
+            level: 2,
         },
         lastUpdated: {
             text: 'Updated at',
