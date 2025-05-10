@@ -24,7 +24,7 @@ Same procedure as installation, just replace the old `cflib.js` file with the ne
 You can backup and rename the old file if you want to keep it.
 If you need to get the version number of the library, you can check the file header by opening the file in a text editor:
 
-```js{2}
+```js{3}
 /**
  * @license MIT
  * cflib v0.0.1 // [!code focus]
