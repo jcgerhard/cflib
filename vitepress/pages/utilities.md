@@ -23,11 +23,13 @@ incrementAndFormat(startNumber, options = {}, callback)
 - `options` (object, optional)
   - `length` (number, default: 8)
     - The desired total length of the output string
-    - The result will be padded to this length
+    - Must be a positive number
+    - Must be greater than or equal to the length of the incremented number
   - `step` (number, default: 1)
     - The value to add to the `startNumber`
   - `character` (string, default: '0')
     - The character used for padding the beginning of the string
+    - Must be exactly 1 character
 
 - `callback` (function, optional)
   - Called with two parameters after incrementing the number:
@@ -42,7 +44,10 @@ incrementAndFormat(startNumber, options = {}, callback)
 
 - Throws an error if the `startNumber` parameter is not provided (is undefined)
 - Throws an error if the `startNumber` parameter is negative
-- Throws an error if the options parameters are of incorrect types
+- Throws an error if the `length` parameter is not a positive number
+- Throws an error if the `character` parameter is not exactly 1 character
+- Throws an error if the `length` parameter is less than the length of the incremented number
+- Throws an error if the `callback` parameter is provided but is not a function
 
 ### Examples
 
@@ -65,6 +70,13 @@ const biggerStep = cflib.utils.incrementAndFormat(50, {
   step: 10 
 });
 console.log(biggerStep); // "00000060"
+
+// Example of error when length is too small for the incremented number
+try {
+  cflib.utils.incrementAndFormat(99999, { length: 4 });
+} catch (error) {
+  console.error(error.message); // "CFLIB Error - Invalid option(s): length (4) must be greater than or equal to the length of the incremented number (6)"
+}
 ```
 
 #### Using the Callback
@@ -82,4 +94,16 @@ cflib.utils.incrementAndFormat(counterElement.dataset.count, {}, () => {
   // Perform actions after incrementing
   notifyUserOfIncrement();
 });
+```
+
+#### Parameter Validation Examples
+
+```javascript
+// This will throw an error because the character must be exactly 1 character
+try {
+  cflib.utils.incrementAndFormat(42, { character: 'ab' });
+} catch (error) {
+  // CFLIB Error - Invalid option(s): character must be exactly 1 character
+  console.error(error.message);
+}
 ```

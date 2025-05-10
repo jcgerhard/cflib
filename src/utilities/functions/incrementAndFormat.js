@@ -4,9 +4,9 @@
  *
  * @param {number} startNumber - The positive number to increment from
  * @param {object} [options={}] - Configuration options
- * @param {number} [options.length=8] - The desired output string length
+ * @param {number} [options.length=8] - The desired output string length (must be positive and greater than the length of the incremented number)
  * @param {number} [options.step=1] - Value to add to startNumber
- * @param {string} [options.character='0'] - Character for padding
+ * @param {string} [options.character='0'] - Character for padding (must be exactly 1 character)
  * @param {function} [callback] - Optional callback with results
  * @param {number} callback.incrementedNumber - The raw incremented number
  * @param {string} callback.formattedResult - The formatted string result
@@ -20,21 +20,40 @@ export default function incrementAndFormat(startNumber, options = {}, callback) 
         throw new Error('The startNumber must be a defined, positive number.');
     }
 
+    // Validate callback if provided
+    if (callback !== undefined && typeof callback !== 'function') {
+        throw new Error('The callback must be a function if provided.');
+    }
+
     // Extract options with defaults
     const { length = 8, step = 1, character = '0' } = options;
 
-    // Validate option types
+    // Validate option types and values
     const validationErrors = [];
     if (typeof length !== 'number') validationErrors.push('length must be a number');
     if (typeof step !== 'number') validationErrors.push('step must be a number');
     if (typeof character !== 'string') validationErrors.push('character must be a string');
 
-    if (validationErrors.length > 0) {
-        throw new Error(`Invalid options: ${validationErrors.join(', ')}`);
+    // Additional validations for option values
+    if (length <= 0) validationErrors.push('length must be a positive number');
+    if (character.length !== 1) validationErrors.push('character must be exactly 1 character');
+
+    // Pre-calculate the incremented value for validation
+    const newValue = startNumber + step;
+    const incrementedValueLength = String(newValue).length;
+
+    // Check if length is greater than the incremented number's string length
+    if (length < incrementedValueLength) {
+        validationErrors.push(
+            `length (${length}) must be greater than or equal to the length of the incremented number (${incrementedValueLength})`
+        );
     }
 
-    // Process incrementation and formatting
-    const newValue = startNumber + step;
+    if (validationErrors.length > 0) {
+        throw new Error(`CFLIB Error - Invalid option(s): ${validationErrors.join(', ')}`);
+    }
+
+    // Process formatting
     const formattedResult = String(newValue).padStart(length, character);
 
     // Execute callback if provided
@@ -44,3 +63,5 @@ export default function incrementAndFormat(startNumber, options = {}, callback) 
 
     return formattedResult;
 }
+
+const testCases = incrementAndFormat(1234, { character: 's', length: 3, step: 2 }); //?
