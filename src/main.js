@@ -1,10 +1,11 @@
 import * as cls from './colors/index.js';
 import * as env from './environment/index.js';
-import * as meta from './metadata/index.js';
+import * as ksk from './kiosk/index.js';
+import * as mta from './metadata/index.js';
 import * as rip from './rip/index.js';
 import * as sys from './system/index.js';
-import * as user from './user/index.js';
-import * as utils from './utilities/index.js';
+import * as usr from './user/index.js';
+import * as utl from './utilities/index.js';
 
 /**
  * CFLib - Cloudflow Library
@@ -16,11 +17,12 @@ import * as utils from './utilities/index.js';
 const cflib = {
     cls,
     env,
-    meta,
+    ksk,
+    mta,
     rip,
     sys,
-    user,
-    utils,
+    usr,
+    utl,
 };
 
 export default cflib;
