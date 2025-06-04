@@ -63,5 +63,3 @@ export default function incrementAndFormat(startNumber, options = {}, callback) 
 
     return formattedResult;
 }
-
-const testCases = incrementAndFormat(1234, { character: 's', length: 3, step: 2 }); //?

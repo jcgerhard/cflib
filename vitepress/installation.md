@@ -3,7 +3,8 @@
 ## Install
 
 1. Download the latest version from the [GitHub releases page](https://github.com/jcgerhard/cflib/releases)
-2. Unzip the downloaded archive with the following structure:
+2. Unzip the downloaded archive
+3. Copy/move the `cflib.js` file from the `release` folder to your Cloudflow environment
 
    ```bash{7}
    .
@@ -15,7 +16,6 @@
            └── cflib.js # [!code focus]
    ```
 
-3. Copy/move the `cflib.js` file from the `release` folder to your Cloudflow environment
 4. Done!
 
 ## Update

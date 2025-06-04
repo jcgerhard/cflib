@@ -49,3 +49,25 @@ function getPackzflowVersion(): string
 const version = cflib.env.getPackzflowVersion();
 // Returns: "6.2 b3456"
 ```
+
+## getCflibVersion
+
+Returns the current CFLib version as specified in package.json.
+
+### Function Signature
+
+```javascript
+function getCflibVersion(): string
+```
+
+### Return Value
+
+- **Type**: `string`
+- **Description**: The version string of the CFLib library as defined in package.json.
+
+### Examples
+
+```javascript
+const version = cflib.env.getCflibVersion();
+// Returns: "0.0.1"
+```

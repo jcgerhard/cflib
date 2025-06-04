@@ -29,7 +29,7 @@ export default defineConfig({
             { text: 'Usage', link: '/usage' },
             {
                 text: 'Documentation',
-                collapsed: true,
+                //collapsed: false,
                 items: [
                     { text: 'Colors', link: '/pages/colors' },
                     { text: 'Environment', link: '/pages/environment' },
@@ -60,7 +60,7 @@ export default defineConfig({
         },
         footer: {
             message: 'Released under the MIT License.',
-            copyright: 'Copyright © 2025-present Jan C. Gerhard',
+            copyright: `Made with ♥️ by Jan C. Gerhard - ${new Date().getFullYear()} `,
         },
     },
 });

@@ -1,4 +1,4 @@
-import api from '../../../dev/environment/apiPortalVersion.js';
+//import api from '../../../dev/environment/apiPortalVersion.js';
 
 export default function getCloudflowVersion() {
     const { major, minor, rev, build } = api.portal.version();

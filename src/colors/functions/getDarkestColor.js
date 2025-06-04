@@ -1,4 +1,4 @@
-import export_metadata from '../../../dev/colors/export_metadata.js';
+//import export_metadata from '../../../dev/colors/export_metadata.js';
 
 /**
  * Finds the darkest color from a given array of color objects based on the 'L' property.
