@@ -1,3 +1,4 @@
-// import xxx from './functions/xxx.js';
+import getCloudflowVersion from '/functions/getCloudflowVersion.js';
+import getPackzflowVersion from '/functions/getPackzflowVersion.js';
 
-export {};
+export { getCloudflowVersion, getPackzflowVersion };
