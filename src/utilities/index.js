@@ -1,3 +1,4 @@
 import incrementNumber from './functions/incrementAndFormat.js';
+import recursiveDelete from './functions/recursiveDelete.js';
 
-export { incrementNumber };
+export { incrementNumber, recursiveDelete };
