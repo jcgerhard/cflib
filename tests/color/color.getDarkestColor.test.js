@@ -1,5 +1,5 @@
 import { describe, it, expect } from 'vitest';
-import { getDarkestColor } from '../../src/color/color.js';
+import getDarkestColor from '../../src/colors/functions/getDarkestColor';
 
 // Test color data
 const colors = [
